@@ -2,42 +2,30 @@
 include('templates/header.php')
 ?>
 
-<!--begin::App Main-->
 <main class="app-main">
-  <!--begin::App Content Header-->
   <div class="app-content-header">
-    <!--begin::Container-->
     <div class="container-fluid">
-      <!--begin::Row-->
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Dashboard</h3>
+          <h3 class="mb-0">Ringkasan Sistem</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Analitik Utama</li>
           </ol>
         </div>
       </div>
-      <!--end::Row-->
+      </div>
     </div>
-    <!--end::Container-->
-  </div>
-  <!--end::App Content Header-->
-  <!--begin::App Content-->
   <div class="app-content">
-    <!--begin::Container-->
     <div class="container-fluid">
-      <!--begin::Row-->
       <div class="row">
-        <!--begin::Col-->
         <div class="col-lg-3 col-6">
-          <!--begin::Small Box Widget 1-->
           <div class="small-box text-bg-primary">
             <div class="inner">
-              <h3>150</h3>
-              <p>New Orders</p>
+              <h3>215</h3>
+              <p>Transaksi Baru</p>
             </div>
             <svg
               class="small-box-icon"
@@ -51,18 +39,15 @@ include('templates/header.php')
             <a
               href="#"
               class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-              More info <i class="bi bi-link-45deg"></i>
+              Lihat Rincian <i class="bi bi-link-45deg"></i>
             </a>
           </div>
-          <!--end::Small Box Widget 1-->
-        </div>
-        <!--end::Col-->
+          </div>
         <div class="col-lg-3 col-6">
-          <!--begin::Small Box Widget 2-->
           <div class="small-box text-bg-success">
             <div class="inner">
-              <h3>53<sup class="fs-5">%</sup></h3>
-              <p>Bounce Rate</p>
+              <h3>88<sup class="fs-5">%</sup></h3>
+              <p>Tingkat Konversi</p>
             </div>
             <svg
               class="small-box-icon"
@@ -76,18 +61,15 @@ include('templates/header.php')
             <a
               href="#"
               class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-              More info <i class="bi bi-link-45deg"></i>
+              Lihat Statistik <i class="bi bi-link-45deg"></i>
             </a>
           </div>
-          <!--end::Small Box Widget 2-->
-        </div>
-        <!--end::Col-->
+          </div>
         <div class="col-lg-3 col-6">
-          <!--begin::Small Box Widget 3-->
           <div class="small-box text-bg-warning">
             <div class="inner">
-              <h3>44</h3>
-              <p>User Registrations</p>
+              <h3>73</h3>
+              <p>Pengguna Terdaftar</p>
             </div>
             <svg
               class="small-box-icon"
@@ -101,18 +83,15 @@ include('templates/header.php')
             <a
               href="#"
               class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-              More info <i class="bi bi-link-45deg"></i>
+              Kelola User <i class="bi bi-link-45deg"></i>
             </a>
           </div>
-          <!--end::Small Box Widget 3-->
-        </div>
-        <!--end::Col-->
+          </div>
         <div class="col-lg-3 col-6">
-          <!--begin::Small Box Widget 4-->
           <div class="small-box text-bg-danger">
             <div class="inner">
-              <h3>65</h3>
-              <p>Unique Visitors</p>
+              <h3>105</h3>
+              <p>Total Pengunjung</p>
             </div>
             <svg
               class="small-box-icon"
@@ -132,34 +111,26 @@ include('templates/header.php')
             <a
               href="#"
               class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-              More info <i class="bi bi-link-45deg"></i>
+              Analisis Trafik <i class="bi bi-link-45deg"></i>
             </a>
           </div>
-          <!--end::Small Box Widget 4-->
+          </div>
         </div>
-        <!--end::Col-->
-      </div>
-      <!--end::Row-->
-      <!--begin::Row-->
       <div class="row">
-        <!-- Start col -->
         <div class="col-lg-7 connectedSortable">
           <div class="card mb-4">
             <div class="card-header">
-              <h3 class="card-title">Sales Value</h3>
+              <h3 class="card-title">Grafik Pendapatan</h3>
             </div>
             <div class="card-body">
               <div id="revenue-chart"></div>
             </div>
           </div>
-          <!-- /.card -->
-        </div>
-        <!-- /.Start col -->
-        <!-- Start col -->
+          </div>
         <div class="col-lg-5 connectedSortable">
           <div class="card text-white bg-primary bg-gradient border-primary mb-4">
             <div class="card-header border-0">
-              <h3 class="card-title">Sales Value</h3>
+              <h3 class="card-title">Distribusi Penjualan Global</h3>
               <div class="card-tools">
                 <button
                   type="button"
@@ -174,35 +145,27 @@ include('templates/header.php')
               <div id="world-map" style="height: 220px"></div>
             </div>
             <div class="card-footer border-0">
-              <!--begin::Row-->
               <div class="row">
                 <div class="col-4 text-center">
                   <div id="sparkline-1" class="text-dark"></div>
-                  <div class="text-white">Visitors</div>
+                  <div class="text-white">Kunjungan</div>
                 </div>
                 <div class="col-4 text-center">
                   <div id="sparkline-2" class="text-dark"></div>
-                  <div class="text-white">Online</div>
+                  <div class="text-white">Aktif</div>
                 </div>
                 <div class="col-4 text-center">
                   <div id="sparkline-3" class="text-dark"></div>
-                  <div class="text-white">Sales</div>
+                  <div class="text-white">Laba</div>
                 </div>
               </div>
-              <!--end::Row-->
-            </div>
+              </div>
           </div>
         </div>
-        <!-- /.Start col -->
+        </div>
       </div>
-      <!-- /.row (main row) -->
     </div>
-    <!--end::Container-->
-  </div>
-  <!--end::App Content-->
-</main>
-<!--end::App Main-->
-
+  </main>
 <?php
 include('templates/footer.php')
 ?>
